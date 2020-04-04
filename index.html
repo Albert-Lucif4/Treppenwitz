@@ -122,7 +122,8 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
             //想说的话
-            S.UI.simulate("漾哥|生日快乐哟|#countdown 3|#rectangle 15x15|#circle 12 |#time");
+            S.UI.simulate(
+                "#countdown 3|漾哥|生日快乐哟！|愿你有好运气|如果没有，愿你在不幸中学会慈悲|愿你被很多人爱|如果没有，愿你在寂寞中学会宽容|愿你每天都能睡到自然醒|#rectangle 15x15|#circle 12|您已经20岁又#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
