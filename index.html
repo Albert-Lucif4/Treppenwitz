@@ -22,11 +22,7 @@
             color: #ebf7f4;
         }
         .body--ready {
-            background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-            background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-            background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-            background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-            background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);      
         }
         .text {
             position: fixed;
@@ -112,7 +108,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";//世界はすでに崩壊している練習ing
     }
     show_date_time();
 </script>
@@ -121,8 +117,8 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-            //想说的话
-            S.UI.simulate("|电脑观看|效果更好|如果没音乐|自己放一下|途中|嗯||漾哥|生日快乐哟|愿你|有好运气|如果没有|愿你|在不幸中|学会慈悲|愿你|被很多人爱|如果没有|愿你|在寂♂寞中|学会宽容|愿你|每天都能|睡到自然醒。|#countdown 3|#rectangle 15x15|#circle 12 |20岁开始了！|苟利国家生死已|岂因祸福避趋之|-1s|#time");
+            //我漾必然得放途中嗷
+            S.UI.simulate("|如果没音乐|自己放一下|途中|嗯||漾哥|生日快乐哟|愿你|有好运气|如果没有|愿你|在不幸中|学会慈悲|愿你|被很多人爱|如果没有|愿你|在寂♂寞中|学会宽容|愿你|每天都能|睡到自然醒。|#countdown 3|#rectangle 15x15|#circle 12 |20岁开始了！|苟利国家生死已|岂因祸福避趋之|-1s|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -452,7 +448,7 @@
                 var r = Math.max(0, d) / 2;
                 shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
                 shapeContext.beginPath();
-                shapeContext.arc(r * gap, r * gap, r * gap, 0, 2 * Math.PI, false);
+                shapeContext.arc(r * gap, r * gap, r * gap, 0, 2 * Math.PI, false);//cnm再tm出bug我就把你个憨批⚪给nm的狗头剁了，我寻思一个圆也tm画不⚪你是你妈个py？
                 shapeContext.fill();
                 shapeContext.closePath();
                 return processCanvas();
